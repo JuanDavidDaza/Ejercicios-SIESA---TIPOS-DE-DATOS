@@ -1,3 +1,7 @@
+array = ["+", ["*", 2, 6], ["-", ["/", ["+", 12, 23], 7], 2]];
+
+
+
 
 const calcular = (array) => {
   let p = 0;
@@ -26,5 +30,8 @@ const calcular = (array) => {
     return p / s;
   }
 }
+// array = ["+", 1,['-',5,3]];
+array = ["+", ["*", 2, 6], ["-", ["/", ["+", 12, 23], 7], 2]];
 
-document.write('primer punto',calcular(array));
+
+document.write('primer punto: ',calcular(array));
